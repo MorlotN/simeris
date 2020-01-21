@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta name="description" content="{% if page.meta-desc %}{{ page.meta-desc | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.meta-desc }}{% endif %}">
+    <meta name="title" content="{% if page.title %}{{ page.title | truncate: 45 | append: ' - HOGO Avocats'}}{% else %}{{ site.title }}{% endif %}">
+  </head>
+  <body>
+
+    {% include navbar_blog.html %}
+
+    <section class="Section Section--gradient">
+      <div class="container">
+        <div class="Section-firstBloc">
+          <div class="Post-titleCard">
+            <a class="yellow-maj yellow-maj--small centered" href="/infographies">Nos infographies</a>
+            <h1 class="Card-title">{{ page.title }}</h1>
+            <p class="Post-date">
+              Le {% include date.html date=page.date %}
+            </p>
+          </div>
+        </div>
+        <img src="{{ page.image }}" alt="{{ page.alt-tag }}" class="image-centered">
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script src="/assets/js/Navbar.js"></script>
+  </body>
+</html>

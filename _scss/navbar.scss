@@ -1,0 +1,111 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+  background-color: #093B69;
+  margin-bottom: 3rem;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  &-logo {
+    height: 30px;
+    width: auto;
+
+    @media (min-width: 768px) {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  &-links {
+
+    @media (max-width: 768px) {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+      left: 30px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      overflow: hidden;
+      padding-top: 8rem;
+      transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+      transform: translateX(-100%);
+      background-color: $white;
+    }
+
+    &--open {
+      transform: translateX(0);
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  &-link {
+    z-index: 20;
+    margin-right: 2rem;
+    font-weight: bold;
+    color: $white;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+
+    &:hover {
+      color: $yellow-darker;
+    }
+
+    &--active {
+      color: $yellow-darker;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &-buttons {
+    border: none;
+    background-color: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &-close {
+    z-index: 20;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  &-cta {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 768px) {
+
+    .Navbar-close, .Navbar-hamburger {
+      display: none;
+    }
+  }
+}

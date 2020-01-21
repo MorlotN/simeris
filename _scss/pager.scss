@@ -1,0 +1,18 @@
+.Pager {
+  text-align: center;
+
+  &-separator, &-item {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  &-item {
+    &:hover, &--active {
+      color: $yellow-darker;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}

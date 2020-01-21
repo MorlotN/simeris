@@ -1,0 +1,46 @@
+---
+label: Article blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Titre
+  description: Titre de l'article
+- type: text
+  name: permalink
+  label: Permalink (URL)
+  description: URL de la page. Séparer les mots par des tirets, pas de majuscules,
+    pas d'accents, pas de caractères spéciaux (type apostrophe).
+- type: file
+  name: image
+  label: Image
+  description: Image de l'article. Pour le nom du fichier, séparer les mots par des
+    tirets, pas de majuscules, pas d'accents, pas de caractères spéciaux (type apostrophe).
+- type: textarea
+  name: meta-desc
+  label: Meta description
+  description: Texte utilisé par Google pour décrire la page. 150 caractères max.
+- name: publication-date
+  type: datetime
+  label: Date de publication
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+pages:
+- _posts/2018-08-23-le-contrat-de-travail-à-temps-partiel.md
+- _posts/2018-09-24-le-consentement-dans-la-rupture-conventionnelle.md
+- _posts/2018-11-18-salaire-brut-et-salaire-net.md
+- _posts/2018-12-04-heures-supplémentaires.md
+- _posts/2019-02-12-le-reçu-pour-solde-de-tout-compte.md
+- _posts/2019-03-04-reprise-d-ancienneté-et-période-d-essai.md
+- _posts/2019-06-12-accord-collectif-d-entreprise.md
+- _posts/2019-06-14-mise-à-pied-à-titre-conservatoire.md
+- _posts/2019-06-25-délai-pour-notifier-le-licenciement.md
+- _posts/2019-06-28-le-calcul-des-délais-en-jours-ouvrables.md
+- _posts/2019-09-25-reste-à-charge-zéro.md
+- _posts/2019-10-04-mettre-en-oeuvre-la-clause-de-mobilité.md
+- _posts/heures-supplémentaires-gérer-la-charge-de-travail-des-salariés.md

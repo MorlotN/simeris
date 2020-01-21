@@ -1,0 +1,39 @@
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+collections:
+  infographics:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "infographics"
+    values:
+      layout: "infographic"
+title: "Le conseil en droit social sur-mesure - HOGO Avocats"
+meta-desc: "HOGO est une société d’avocats exclusivement dédiée à l’accompagnement des entreprises & associations en droit du travail et droit de la sécurité sociale."
+
+plugins: [jekyll-paginate-v2]
+# Pagination Settings
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 8
+  permalink: '/page:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'publication-date'
+  sort_reverse: true
+
+plugins_dir:
+  - jekyll-paginate-v2

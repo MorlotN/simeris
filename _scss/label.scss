@@ -1,0 +1,16 @@
+.Label {
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: $grey;
+  color: $black;
+
+  &--active {
+    background-color: $blue;
+    color: $white;
+  }
+}

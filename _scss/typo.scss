@@ -1,0 +1,56 @@
+.yellow-maj {
+  text-transform: uppercase;
+  color: $yellow-darker;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  &--small {
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.highlight {
+  background-color: $yellow;
+  white-space: nowrap;
+}
+
+.centered {
+  text-align: center;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.big {
+  font-size: 2rem;
+}
+
+.blue {
+  color: $blue;
+}
+
+.blue-maj {
+  text-transform: uppercase;
+  color: $blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  &--small {
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}

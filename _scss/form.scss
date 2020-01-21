@@ -1,0 +1,36 @@
+.Form {
+
+  &-field {
+    margin-bottom: 1rem;
+
+    &--inline {
+      width: 48%;
+    }
+  }
+
+  &-inlineFields {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-label {
+    display: block;
+  }
+
+  &-input {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    background-color: $grey-lighter;
+    min-height: 2.4rem;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  &-submit {
+    border: none;
+  }
+}

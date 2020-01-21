@@ -1,0 +1,45 @@
+.Section {
+
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    padding: 4rem 0;
+  }
+
+  &--noPaddingBottom {
+    padding-top: 4rem;
+  }
+
+  &--gradient {
+    background: linear-gradient($white, $very-light-grey);
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &--withBackground {
+    background-image: url("/assets/images/blob-shape.svg");
+    background-size: 150%;
+    background-position: -200px -500px;
+    background-repeat: no-repeat;
+
+    @media (min-width: 960px) {
+      background-size: cover;
+    }
+  }
+
+  &-firstBloc {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &-bloc {
+    margin-bottom: 4rem;
+  }
+
+  &-title {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,34 @@
+---
+layout: default
+title: Blog
+meta-desc: Actualités sur les derniers chantiers. Découvrez les derniers chantier qui ont été réalisé par Simeris.
+permalink: /blog/
+pagination:
+  enabled: true
+---
+
+{% include navbar_blog.html %}
+
+<section class="Section Section--gradient">
+  <div class="container">
+    <h1 class="centered blue big">Blog</h1>
+    <h2 class="centered normal Section-title">Actualités sur les derniers chantiers</h2>
+    <div class="Cards">
+      {% for post in paginator.posts %}
+        <div class="Card">
+          <div class="Card-image" style="background-image: url(/{{ post.image }})";></div>
+          <div class="Card-content">
+            <h3>{{ post.title }}</h3>
+            <p class="Card-desc">{{ post.meta-desc }}</p>
+            <p class="Card-date">
+              Le {% include date.html date=post.publication-date %}
+            </p>
+          </div>
+          <a class="Card-link" href="{{ post.url }}"></a>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% include paginator.html %}
+  </div>
+</section>

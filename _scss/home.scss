@@ -1,0 +1,74 @@
+.Home {
+
+  &-header {
+    min-height: auto;
+    display: block;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      min-height: 70vh;
+    }
+  }
+
+  &-image {
+
+    &--large {
+      width: 100%;
+      height: auto;
+    }
+
+    &--medium {
+      width: 60%;
+      height: auto;
+    }
+
+    &--round {
+      width: 40%;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+
+    @media (min-width: 960px) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &-subtitle {
+    font-size: 1.2rem;
+    color: $dark;
+
+    @media (min-width: 960px) {
+      font-size: 1.4rem;
+    }
+
+    &--noMarginTop {
+      margin-top: 0;
+    }
+  }
+
+  &-address {
+    margin-top: 5rem;
+    font-weight: bolder;
+  }
+
+  &-icon {
+    height: 100px;
+    width: 100px;
+  }
+}

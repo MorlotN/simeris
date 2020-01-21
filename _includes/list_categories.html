@@ -1,0 +1,12 @@
+<div class="Categories">
+  <strong>Catégories</strong>
+
+  {% assign categories_list = site.infographics | map: 'category' | uniq | sort %}
+
+  <ul>
+    <li class="Label Label--active">Tout</li>
+    {% for item in categories_list %}
+      <li class="Label">{{ item | strip }}</li>
+    {% endfor %}
+  </ul>
+</div>

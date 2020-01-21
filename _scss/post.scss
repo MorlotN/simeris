@@ -1,0 +1,62 @@
+.Post {
+
+  &-titleCard {
+    margin-top: -50px;
+    box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem 2rem;
+    border-bottom: 9px solid $yellow;
+    margin-bottom: 3rem;
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-image {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+      padding-right: 40px;
+      padding-left: 40px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 100px;
+      padding-left: 100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &-date {
+    margin-bottom: 0;
+    color: $dark-grey;
+  }
+
+  &-content {
+
+    h2 {
+      margin-top: 3rem;
+    }
+
+    ul {
+      padding-inline-start: 40px;
+    }
+
+    li {
+      list-style: disc;
+    }
+  }
+}

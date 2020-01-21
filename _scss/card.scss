@@ -1,0 +1,81 @@
+.Card {
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  position: relative;
+  flex: 0 1 100%;
+  background-color: $white;
+  border-bottom: 9px solid $old-blue;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    flex: 0 1 48%;
+    margin-bottom: 3rem;
+  }
+
+  &--padding {
+    padding: 2rem 2rem 1rem 2rem;
+    box-sizing: border-box;
+  }
+
+  &-image {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &-title {
+    font-size: 1.2rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &-content {
+    padding: 1rem 2rem;
+  }
+
+  &-date {
+    color: $dark-grey;
+  }
+
+  &-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  ul {
+    padding-inline-start: 1rem;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+
+  &-icon {
+    color: $yellow;
+  }
+
+  &-cta {
+    text-align: right;
+    color: $yellow-darker;
+    font-weight: bold;
+  }
+
+  &-category {
+    background-color: $blue;
+    color: $white;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}

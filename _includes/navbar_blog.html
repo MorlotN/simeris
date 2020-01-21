@@ -1,0 +1,20 @@
+<header>
+  <div class="container Navbar">
+    <a href="/">
+      <img src="/assets/images/logo.png"
+           alt="Logo HOGO Avocats"
+           class="Navbar-logo">
+    </a>
+
+    <nav class="Navbar-links">
+      <a href="/identite" class="Navbar-link">Identité</a>
+      <a href="/service" class="Navbar-link">Découvrir nos services</a>
+      <a href="/contact" class="Navbar-link">Contact</a>
+      <a href="/blog" class="Navbar-link {% if page.url =='/blog/' %} {{'Navbar-link--active'}} {% endif %}">Blog</a>
+      <a href="/infographies" class="Navbar-link {% if page.url =='/infographies/' %} {{'Navbar-link--active'}} {% endif %}">Infographies</a>
+      <button type="button" class="Navbar-buttons Navbar-close"><i class="fas fa-times"></i></button>
+    </nav>
+
+    <button type="button" class="Navbar-buttons Navbar-hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</header>

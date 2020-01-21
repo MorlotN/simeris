@@ -1,0 +1,67 @@
+---
+label: Infographie
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: file
+  name: image
+  label: image
+- type: text
+  name: category
+  label: category
+- type: text
+  name: alt-tag
+  label: alt-tag
+- type: text
+  name: meta-desc
+  label: meta-desc
+- name: date
+  type: datetime
+  label: Date de publication
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: false
+  default: now
+pages:
+- _infographics/Les heures complémentaires.md
+- _infographics/clause-de-non-concurrence.md
+- _infographics/contrôle-urssaf-accord-tacite.md
+- _infographics/coût-patronal-salaire-brut-et-salaire-net.md
+- _infographics/echantillonage-et-extrapolation.md
+- _infographics/epargne-salariale-l-intéressement.md
+- _infographics/epargne-salariale-la-participation.md
+- _infographics/fixation-forfaitaire-des-cotisations-sociales.md
+- _infographics/forfait-en-jours.md
+- _infographics/inaptitude-d-un-salarié-non-protégé.md
+- _infographics/inaptitude-d-un-salarié-protégé.md
+- _infographics/inaptitude-indemnités.md
+- _infographics/information-et-consultation-du-comité-social-et-economique.md
+- _infographics/la-négociation-collective-sans-délégué-syndical.md
+- _infographics/la-statut-du-vrp.md
+- _infographics/le-conseil-d-entreprise.md
+- _infographics/le-contrôle-urssaf-sur-place.md
+- _infographics/le-contrôle-urssaf-sur-support-dématérialisé.md
+- _infographics/le-détachement-dans-l-union-européenne.md
+- _infographics/le-règlement-intérieur.md
+- _infographics/le-traitement-social-et-fiscal-de-l-indemnité-de-licenciement.md
+- _infographics/le-télétravail.md
+- _infographics/les-congés-payés.md
+- _infographics/les-heures-supplémentaires.md
+- _infographics/licenciement-économique-individuel-d-un-salarié-non-protégé.md
+- _infographics/loi-pacte-et-épargne-salariale.md
+- _infographics/pepa-2020-1.md
+- _infographics/plan-d-épargne-d-entreprise.md
+- _infographics/plan-d-épargne-pour-la-retraite-collective.md
+- _infographics/rupture-conventionnelle-d-un-salarié-non-protégé.md
+- _infographics/rupture-conventionnelle-d-un-salarié-protégé.md
+- _infographics/sous-traitance-et-obligation-de-vigilance.md
